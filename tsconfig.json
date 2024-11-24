@@ -1,40 +1,17 @@
 {
-  "compilerOptions": { 
-    "target": "esnext",
-    "module": "CommonJS", 
-    "allowJs": true,
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ES6",
     "skipLibCheck": true,
-    "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "strictNullChecks": false,
-    "noImplicitAny":false,
-    "types": [ 
-       "@types/node","node"
-    ],
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "types": ["node"]
   },
   "include": [
-    "./**/*.ts",
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "libs"
+    "src/**/*.ts","test/**/*.ts","./index.ts" ,"**/*.spec.ts"  ],
+  "exclude":[
+    "node_modules" 
   ]
+  ,
+    "typeRoots": [
+        "node_modules/@types"
+    ]
 }

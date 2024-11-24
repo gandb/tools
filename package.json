@@ -1,14 +1,26 @@
 {
+  "name": "simple-tools",
+  "version": "0.0.4",
+  "type": "module",
+  "description": "Command Tools",
+  "main": "tool.js",
+  "scripts": {
+    "compile-descontinuado-erro-no-input-de-user": "tsc --sourceMap",
+    "compile": "tsc",
+    "tsc-version": "tsc --version",
+    "test": "tsc --sourceMap & mocha \"test/**/*.test.js\"",
+    "start": "node -r source-map-support/register index.js"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "nodemon": "^1.18.7",
-    "tsc": "^1.20150623.0",
-    "typescript": "^3.1.6"
+    "source-map-support": "^0.5.21",
+    "typescript": "^3.9.10"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
     "@types/mocha": "^5.2.5",
-    "@types/node": "^10.12.10",
+    "@types/node": "^10.17.60",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
